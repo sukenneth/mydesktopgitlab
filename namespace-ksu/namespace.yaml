@@ -1,0 +1,18 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: kktest2
+  labels:
+    kubernetes.io/metadata.name: kktest2
+    pod-security.kubernetes.io/audit: restricted
+    pod-security.kubernetes.io/audit-version: latest
+    pod-security.kubernetes.io/warn: restricted
+    pod-security.kubernetes.io/warn-version: latest
+  annotations:
+    openshift.io/description: ''
+    openshift.io/display-name: kktest2
+spec:
+  finalizers:
+    - kubernetes
+status:
+  phase: Active
